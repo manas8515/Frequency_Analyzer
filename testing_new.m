@@ -1,10 +1,10 @@
 %First we need to import an audio file
-[y,Fs]=audioread('piano.wav');
+[y,Fs]=audioread('piano-C4.wav');
 %sound(y,Fs);
 
 %Now we have the audio tune set for use
 %First we will plot the signal
-info=audioinfo('piano.wav');
+info=audioinfo('piano-C4.wav');
 t=0:(1/Fs):(info.Duration);
 t=t(1:end-1);
 plot(t,y)
