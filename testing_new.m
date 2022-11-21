@@ -11,7 +11,7 @@ plot(t,y)
 
 
 maximum=max(abs(y));
-mark=0.6*maximum;
+mark=0.5*maximum;
 %Again we have the plot now and this is amazing
 start=0;
 stop=0;
@@ -31,7 +31,7 @@ while i<info.TotalSamples-500
             freq_max=max(abs(Y));
             j=1;
             while j<(stop-start)/2
-                if abs(Y(j))>0.6*freq_max
+                if abs(Y(j))>0.5*freq_max
                     note_pos=[note_pos, temp];
                     note_freq=[note_freq, Fs*j/(stop-start+1)];
                     j=j+1;
